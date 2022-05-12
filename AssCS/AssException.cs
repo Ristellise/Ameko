@@ -1,12 +1,15 @@
-namespace Ameko.AssCS;
+using System;
 
-/// <summary>
-/// Exception used when issues arise involving ASS
-/// </summary>
-/// <author>9volt</author>
-public class AssException : Exception
+namespace Ameko.AssCS
 {
-    public AssException(string message) : base($"AssException: {message}")
+    /// <summary>
+    /// Exception used when issues arise involving ASS
+    /// </summary>
+    /// <author>9volt</author>
+    public class AssException : Exception
     {
+        public AssException(string message) : base($"AssException: {message}")
+        {
+        }
     }
 }
